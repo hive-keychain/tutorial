@@ -52,7 +52,6 @@ export const getTutorialSlideDataList = (
       ],
       finalLine:
         "As a reminder, on Hive the wallet address is the username itself.",
-      extraClass: "extra-space-between-lines",
     },
     {
       title: "Accessing dApps in the simplest way",
@@ -67,7 +66,6 @@ export const getTutorialSlideDataList = (
       title: "Swapped all!",
       description:
         "There is no better way to make swaps than with Hive Keychain. In a few clicks you can swap between native Hive tokens and Hive Engine tokens. Instead of making several transactions, sit back and let Hive Keychain take care of it for you. You can follow the progress ont the swap history page.",
-      extraClass: "extra-space-between-lines",
     },
     {
       title: "Buy Hive and HBD easily!",
@@ -76,7 +74,6 @@ export const getTutorialSlideDataList = (
           ? "Buying Hive and HBD through Keychain is super easy. Just head to the Swap button to see all available options, for both Hive and HBD. In each case, you should follow the steps required by each option to make the purchase, and the tokens will arrive in your Hive account without any issues. It's worth noting that with Transak, you can buy Hive using fiat directly through credit cards, bank transfers, Apple Pay, and more."
           : "Buying Hive and HBD through Keychain is super easy. Just head to the Buy tab to see all available options, for both Hive and HBD. In each case, you should follow the steps required by each option to make the purchase, and the tokens will arrive in your Hive account without any issues. It's worth noting that with Transak, you can buy Hive using fiat directly through credit cards, bank transfers, Apple Pay, and more.",
       ],
-      extraClass: "extra-space-between-lines",
     },
   ];
 };

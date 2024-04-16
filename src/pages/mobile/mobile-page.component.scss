@@ -72,32 +72,25 @@
           justify-content: space-evenly;
           align-items: center;
           width: 100%;
-          padding: 0px 16px;
+          padding: 16px 16px;
         }
         .text {
           @include poppins500(20px);
           color: white;
           padding: 0px 16px;
           text-align: left;
-          &.extra-space-between-lines {
-            line-height: 38px;
-          }
         }
-
         .empty-space {
           margin-bottom: 20px;
         }
-
         .read-more-link {
           @include link();
         }
-
         .extra-information {
           @include poppins400(14px);
           color: white;
           padding: 0px 16px;
         }
-
         .image {
           display: flex;
           align-items: center;
@@ -108,6 +101,22 @@
             height: auto;
             max-width: 240px;
             max-height: 240px;
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          .title {
+            font-size: 20px;
+          }
+          .text {
+            font-size: 16px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          .title {
+            font-size: 18px;
+          }
+          .text {
+            font-size: 14px;
           }
         }
       }

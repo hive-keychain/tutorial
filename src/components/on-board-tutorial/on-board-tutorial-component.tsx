@@ -26,7 +26,6 @@ const OnBoardTutorial = ({ isMobile }: Props) => {
         showStatus={false}
       >
         {getTutorialSlideDataList(false).map((slide, index) => {
-          const extraClass = slide.extraClass;
           return (
             <div
               className="carousel-item"
@@ -36,15 +35,13 @@ const OnBoardTutorial = ({ isMobile }: Props) => {
               <div className="slide-bottom-container">
                 {slide.subTitle && <div className="text">{slide.subTitle}</div>}
                 {slide.description && (
-                  <div className={`text ${extraClass}`}>
-                    {slide.description}
-                  </div>
+                  <div className={"text"}>{slide.description}</div>
                 )}
                 {slide.paragraphs &&
                   slide.paragraphs.map((p, i) => {
                     return (
                       <div
-                        className={`text ${extraClass} ${
+                        className={`text ${
                           i === slide.paragraphs!.length - 1
                             ? "empty-space"
                             : ""
