@@ -1,10 +1,4 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Navigate } from "react-router-dom";
-
-interface UserSession {
-  username: string;
-  token: string;
-}
 
 const App = () => {
   var isMobile =
@@ -17,7 +11,7 @@ const App = () => {
   } else {
     Navigate({ to: "extension" });
   }
-  return <div className={`tutorial-page`}></div>;
+  return <div></div>;
 };
 
 export const AppComponent = App;
