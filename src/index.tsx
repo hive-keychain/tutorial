@@ -1,13 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AppComponent } from "./App";
 import "./app.scss";
+import { ExtensionPageComponent } from "./pages/extension/extension-page.component";
+import { MobilePageComponent } from "./pages/mobile/mobile-page.component";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <AppComponent />,
+  },
+  {
+    path: "extension",
+    element: <ExtensionPageComponent />,
+  },
+  {
+    path: "mobile",
+    element: <MobilePageComponent />,
   },
 ]);
 
