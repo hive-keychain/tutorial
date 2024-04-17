@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "tutorial",
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
@@ -22,8 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start": "serve build -p 80 -L",
-    "pm2-start": "pm2 start --name dashboard npm -- start"
+    "start": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "echo 'tutorial.hive-keychain.com' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
