@@ -75,12 +75,12 @@ export const getTutorialSlideDataList = (
       title: t("slide_9_title"),
       description: t("slide_9_description"),
     },
-    // Will add this part later on, it's not ready on the extension yet (new version)
-    {
-      title: t("slide_10_title"),
-      description: isMobile
-        ? t("slide_10_description_mobile")
-        : t("slide_10_description_extension"),
-    },
+    // TODO Will add this part later on, it's not ready on the extension yet (new version)
+    // {
+    //   title: t("slide_10_title"),
+    //   description: isMobile
+    //     ? t("slide_10_description_mobile")
+    //     : t("slide_10_description_extension"),
+    // },
   ];
 };
