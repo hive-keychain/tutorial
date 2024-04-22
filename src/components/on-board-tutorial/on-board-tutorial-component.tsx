@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { getTutorialSlideDataList } from "../../reference-data/tutorial-slides";
@@ -7,6 +8,7 @@ interface Props {
 }
 
 const OnBoardTutorial = ({ isMobile }: Props) => {
+  const { t } = useTranslation();
   const sourceImagePrefix = isMobile
     ? "assets/images/slides/mobile/"
     : "assets/images/slides/extension/";
@@ -18,7 +20,7 @@ const OnBoardTutorial = ({ isMobile }: Props) => {
       showThumbs={false}
       showStatus={false}
     >
-      {getTutorialSlideDataList(false).map((slide, index) => {
+      {getTutorialSlideDataList(t, false).map((slide, index) => {
         return (
           <div
             className="card-slide"

@@ -29,7 +29,6 @@ i18next
   .init({
     detection: LANGUAGE_DETECTION_OPTIONS,
     resources,
-    debug: true,
     interpolation: {
       escapeValue: false,
     },

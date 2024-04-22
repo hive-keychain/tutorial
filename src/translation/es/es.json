@@ -1,5 +1,8 @@
 {
   "back_home_link_title": "Volver Inicio",
   "error_404_title": "Error 404",
-  "not_found_title": "Página no encontrada"
+  "not_found_title": "Página no encontrada",
+  "slide_1_title": "Qué es Keychain?",
+  "slide_1_paragraph_1": "Keychain es tu solución para navegar por el ecosistema Hive con facilidad y seguridad. Tanto si estás en un ordenador como si te desplazas con tu smartphone, Keychain te permite gestionar tus cuentas de Hive sin esfuerzo y sin preocuparte de exponer tus claves privadas. Con Keychain, puedes transferir tokens, emitir votos y gestionar una gran variedad de transacciones sin problemas.",
+  "slide_1_paragraph_2": "Fácil de usar y diseñado pensando en tu seguridad, Keychain es el compañero perfecto para cualquiera que quiera sacar el máximo partido a su experiencia Hive"
 }
