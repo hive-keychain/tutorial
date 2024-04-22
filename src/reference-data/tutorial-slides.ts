@@ -17,6 +17,24 @@ export const getTutorialSlideDataList = (
       description:
         "Each Hive key has its own purpose in regards of your account security.",
       list: [
+        "Owner: allows you to recover accounts and regenerate other keys, as well as to set a new master password.",
+        "Active: allows you to transfer and manage assets, vote for witnesses, or approve proposals in the DHF.",
+        "Posting: allows you to perform posting transactions such as posting, commenting, voting, and more.",
+        "Memo: allows you to encrypt and decrypt memos attached to transfers.",
+      ],
+      finalLine:
+        "You can access your keys from Settings-> Accounts-> Manage accounts. Hive Keychain will only keep Active, Posting, and Memo. The Owner key should be safely stored offline.",
+    },
+    {
+      title: "Security Features of Hive Keychain",
+      description:
+        "Hive Keychain enhances security by storing private keys locally on the user's device, never on external servers. It uses encryption to safeguard these keys and requires manual confirmation for transactions, thereby preventing unauthorized access. Additionally, it provides an extra layer of security through website authentication to prevent phishing. The extension and app are designed to offer a secure and controlled interface for interacting with the Hive blockchain. Furthermore, you can connect your Hive account with a Ledger device for increased security directly from the extension.",
+    },
+    {
+      title: "All your tokens in the same place",
+      description:
+        "View all you Hive data in a single place. Here are just some of the things you can do from our main page:",
+      list: [
         "Switch between accounts.",
         "Check your Voting Power and Resources.",
         "Access and manage your Hive native tokens and Hive Engine tokens.",
@@ -25,7 +43,7 @@ export const getTutorialSlideDataList = (
       ],
     },
     {
-      title: "HIVE, HBD, and HP",
+      title: "HIVE, HBD, and Hive Power",
       subTitle: "What are the differences?",
       description:
         "HIVE and HBD are the native tokens of the Hive blockchain. HIVE can be stored in its liquid form called HIVE, and its vested form called HP. Read on for more information:",
@@ -50,7 +68,7 @@ export const getTutorialSlideDataList = (
       paragraphs: [
         "Click on the 'Send' button to transfer Hive or HBD. Just fill in the username, the amount, and the memo (optional). If needed, you can also encrypt the memo by clicking on the encryption icon, or start recurrent transfers. All transactions are fast and free on Hive, just make sure you have enough RC to broadcast.",
       ],
-      finalLine: "As a reminder, your wallet address is your username.",
+      finalLine: "As a reminder, your wallet address is your username itself.",
     },
     {
       title: "Accessing dApps in the simplest way",
