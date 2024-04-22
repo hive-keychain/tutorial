@@ -1,11 +1,28 @@
 import { NavLink } from "react-router-dom";
+import "./error-page.component.scss";
 
 const ErrorPage = () => {
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  const imageSrc = isMobile
+    ? "assets/images/slides/mobile/1.png"
+    : "assets/images/slides/extension/1.png";
   return (
-    <div>
-      <div>Error 404</div>
-      <div>Page not found</div>
-      <NavLink to={"/"}>Back Home</NavLink>
+    <div className={`error-page ${isMobile ? null : "as-row"}`}>
+      <img
+        src={imageSrc}
+        alt={`${imageSrc}`}
+        className={`image ${isMobile ? null : "no-width"}`}
+      />
+      <div className="content">
+        <div className="title">Error 404</div>
+        <div className="text">Page not found</div>
+        <NavLink className={"text"} to={"/"}>
+          Back Home
+        </NavLink>
+      </div>
     </div>
   );
 };

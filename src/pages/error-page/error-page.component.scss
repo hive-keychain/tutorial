@@ -1,0 +1,36 @@
+@import "../../common-style/common-style.scss";
+
+.error-page {
+  display: flex;
+  background: #181818;
+  flex-direction: column;
+  height: 100vh;
+  &.as-row {
+    flex-direction: row;
+  }
+  .image {
+    width: 100%;
+    &.no-width {
+      width: unset;
+    }
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      @include poppins500(28px);
+      color: white;
+      padding: 0px 24px;
+      text-align: center;
+    }
+    .text {
+      @include poppins500(20px);
+      color: white;
+      padding: 0px 16px;
+      text-align: left;
+    }
+  }
+}
