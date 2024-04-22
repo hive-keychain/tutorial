@@ -14,7 +14,6 @@
       height: 100%;
       background: #181818;
       .control-dots {
-        bottom: 10px;
         .dot {
           background: white;
           box-shadow: unset;
@@ -57,7 +56,7 @@
             width: 100%;
           }
           .slide-bottom-container {
-            height: 78%;
+            height: calc(75% - 10px);
             overflow-y: scroll;
             display: flex;
             flex-direction: column;
