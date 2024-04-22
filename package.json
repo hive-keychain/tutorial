@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "start": "serve -s build",
     "predeploy": "npm run build",
-    "deploy": "echo 'tutorial.hive-keychain.com' > ./build/CNAME && gh-pages -d build"
+    "deploy": "echo tutorial.hive-keychain.com > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
