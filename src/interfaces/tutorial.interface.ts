@@ -4,7 +4,7 @@ export interface TutorialSlideItem {
   paragraphs?: string[];
   description?: string;
   list?: string[];
-  imagesSrc?: string[];
+  imageSrc?: string;
   finalLine?: string;
   interactive?: {
     label: string;
