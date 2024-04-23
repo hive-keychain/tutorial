@@ -8,79 +8,77 @@ export const getTutorialSlideDataList = (
   const savingAPR = 20;
   return [
     {
-      title: t("slide_1_title"),
-      paragraphs: [t("slide_1_paragraph_1"), t("slide_1_paragraph_2")],
+      title: t("introduction.title"),
+      paragraphs: [t("introduction.text_1"), t("introduction.text_2")],
     },
     {
-      title: t("slide_2_title"),
-      description: t("slide_2_description"),
+      title: t("keys.title"),
+      description: t("keys.description"),
       list: [
-        t("slide_2_list_1"),
-        t("slide_2_list_2"),
-        t("slide_2_list_3"),
-        t("slide_2_list_4"),
+        t("keys.text_1"),
+        t("keys.text_2"),
+        t("keys.text_3"),
+        t("keys.text_4"),
       ],
-      finalLine: t("slide_2_final_line"),
+      finalLine: t("keys.text_5"),
     },
     {
-      title: t("slide_3_title"),
-      description: t("slide_3_description"),
+      title: t("security.title"),
+      description: t("security.description"),
     },
     {
-      title: t("slide_4_title"),
-      description: t("slide_4_description"),
+      title: t("main_interface.title"),
+      description: t("main_interface.description"),
       list: [
-        t("slide_4_list_1"),
-        t("slide_4_list_2"),
-        t("slide_4_list_3"),
-        t("slide_4_list_4"),
-        t("slide_4_list_5"),
-      ],
-    },
-    {
-      title: t("slide_5_title"),
-      subTitle: t("slide_5_subtitle"),
-      description: t("slide_5_description"),
-      list: [
-        t("slide_5_list_1"),
-        t("slide_5_list_2"),
-        t("slide_5_list_3", { savingAPR: savingAPR }),
-        t("slide_5_list_4"),
+        t("main_interface.text_1"),
+        t("main_interface.text_2"),
+        t("main_interface.text_3"),
+        t("main_interface.text_4"),
+        t("main_interface.text_5"),
       ],
     },
     {
-      title: t("slide_6_title"),
+      title: t("hive_mative_tokens.title"),
+      subTitle: t("hive_mative_tokens.subtitle"),
+      description: t("hive_mative_tokens.description"),
+      list: [
+        t("hive_mative_tokens.text_1"),
+        t("hive_mative_tokens.text_2"),
+        t("hive_mative_tokens.text_3", { savingAPR: savingAPR }),
+        t("hive_mative_tokens.text_4"),
+      ],
+    },
+    {
+      title: t("mana_and_rc.title"),
       paragraphs: [
-        t("slide_6_paragraph_1"),
-        t("slide_6_paragraph_2"),
-        t("slide_6_paragraph_3"),
-        t("slide_6_paragraph_4"),
+        t("mana_and_rc.text_1"),
+        t("mana_and_rc.text_2"),
+        t("mana_and_rc.text_3"),
+        t("mana_and_rc.text_4"),
       ],
     },
     {
-      title: t("slide_7_title"),
-      description: t("slide_7_description"),
-      finalLine: t("slide_7_final_line"),
+      title: t("transactions.title"),
+      description: t("transactions.description"),
+      finalLine: t("transactions.text_1"),
     },
     {
-      title: t("slide_8_title"),
+      title: t("dapps.title"),
       paragraphs: [
-        isMobile
-          ? t("slide_8_paragraph_1_mobile")
-          : t("slide_8_paragraph_1_extension"),
-        t("slide_8_paragraph_2"),
+        isMobile ? t("dapps.mobile.text_1") : t("dapps.extension.text_1"),
+        t("dapps.text_2"),
       ],
     },
     {
-      title: t("slide_9_title"),
-      description: t("slide_9_description"),
+      title: t("swaps.title"),
+      description: t("swaps.description"),
     },
     // TODO Will add this part later on, it's not ready on the extension yet (new version)
-    // {
-    //   title: t("slide_10_title"),
-    //   description: isMobile
-    //     ? t("slide_10_description_mobile")
-    //     : t("slide_10_description_extension"),
-    // },
+    {
+      title: t("buy.title"),
+      description: isMobile
+        ? t("buy.mobile.description")
+        : t("buy.extension.description"),
+    },
   ];
 };
