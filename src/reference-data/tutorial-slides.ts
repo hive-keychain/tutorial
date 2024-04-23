@@ -74,11 +74,11 @@ export const getTutorialSlideDataList = (
       description: t("swaps.description"),
     },
     // TODO Will add this part later on, it's not ready on the extension yet (new version)
-    {
-      title: t("buy.title"),
-      description: isMobile
-        ? t("buy.mobile.description")
-        : t("buy.extension.description"),
-    },
+    // {
+    //   title: t("buy.title"),
+    //   description: isMobile
+    //     ? t("buy.mobile.description")
+    //     : t("buy.extension.description"),
+    // },
   ];
 };
