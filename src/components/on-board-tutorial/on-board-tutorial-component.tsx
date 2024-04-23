@@ -20,6 +20,9 @@ const OnBoardTutorial = ({ isMobile }: Props) => {
       showThumbs={false}
       useKeyboardArrows
       showStatus={false}
+      preventMovementUntilSwipeScrollTolerance={true}
+      swipeScrollTolerance={50}
+      swipeable
     >
       {getTutorialSlideDataList(t, false).map((slide, index) => {
         return (
