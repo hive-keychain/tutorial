@@ -23,6 +23,7 @@ const OnBoardTutorial = ({ isMobile }: Props) => {
         showArrows={true}
         showIndicators={true}
         showThumbs={false}
+        useKeyboardArrows
         showStatus={false}
       >
         {getTutorialSlideDataList(false).map((slide, index) => {
