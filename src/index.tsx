@@ -6,6 +6,8 @@ import { ErrorPageComponent } from "./pages/error-page/error-page.component";
 import { ExtensionPageComponent } from "./pages/extension/extension-page.component";
 import { MobilePageComponent } from "./pages/mobile/mobile-page.component";
 import "./style.scss";
+//Import i18n.ts
+import "./i18n";
 
 const router = createHashRouter([
   {

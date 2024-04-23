@@ -4,20 +4,6 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  .main-card-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    .main-image {
-      width: 50%;
-      height: 100%;
-      .main-onboarding-image {
-        height: 100%;
-      }
-    }
-  }
   .carousel-root {
     display: contents;
     flex: 1;
@@ -28,7 +14,6 @@
       height: 100%;
       background: #181818;
       .control-dots {
-        bottom: 10px;
         .dot {
           background: white;
           box-shadow: unset;
@@ -41,70 +26,79 @@
       .slider-wrapper {
         height: 100%;
       }
-
-      .carousel-item {
+      .card-slide {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
         height: 100vh;
-        .title {
-          @include poppins500(32px);
-          color: white;
-          padding: 0px 24px;
-          text-align: center;
+        align-items: center;
+        .image-container {
+          height: 100%;
+          .image {
+            height: 100%;
+          }
         }
-        .slide-top-container {
-          background-color: #212838;
-          height: 22%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
+        .content {
+          flex: 1;
+          height: 100vh;
+          .title {
+            @include poppins500(32px);
+            color: white;
+            padding: 0px 24px;
+            text-align: center;
+          }
+          .slide-top-container {
+            background-color: #212838;
+            height: 22%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+          .slide-bottom-container {
+            height: calc(75% - 10px);
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            padding: 16px 16px;
+          }
+          .text {
+            @include poppins500(20px);
+            color: white;
+            padding: 0px 16px;
+            text-align: left;
+            &.extra-space-between-lines {
+              line-height: 38px;
+            }
+          }
+
+          .empty-space {
+            margin-bottom: 20px;
+          }
         }
-        .slide-bottom-container {
-          height: 78%;
-          overflow-y: scroll;
-          display: flex;
+      }
+      @media only screen and (max-width: 840px) {
+        .card-slide {
           flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-          width: 100%;
-          padding: 16px 16px;
+        }
+        .image-container {
+          position: absolute;
+          opacity: 0.2;
+          z-index: 0;
+        }
+        .content {
+          z-index: 1;
+        }
+      }
+      @media only screen and (min-width: 1400px) {
+        .title {
+          font-size: 36px !important;
         }
         .text {
-          @include poppins500(20px);
-          color: white;
-          padding: 0px 16px;
-          text-align: left;
-          &.extra-space-between-lines {
-            line-height: 38px;
-          }
-        }
-
-        .empty-space {
-          margin-bottom: 20px;
-        }
-
-        .read-more-link {
-          @include link();
-        }
-
-        .extra-information {
-          @include poppins400(14px);
-          color: white;
-          padding: 0px 16px;
-        }
-
-        .image {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            border-radius: 8px;
-            border: 1px solid $red;
-            height: auto;
-            max-width: 240px;
-            max-height: 240px;
-          }
+          font-size: 24px !important;
         }
       }
     }
