@@ -1,11 +1,17 @@
+import { Client } from "@hiveio/dhive";
 import { TFunction } from "i18next";
 import { TutorialSlideItem } from "../interfaces/tutorial.interface";
-
-export const getTutorialSlideDataList = (
+export const getTutorialSlideDataList = async (
   t: TFunction<"translation", undefined>,
   isMobile: boolean
-): TutorialSlideItem[] => {
-  const savingAPR = 20;
+): Promise<TutorialSlideItem[]> => {
+  const client = new Client([
+    "https://api.hive.blog",
+    "https://api.deathwing.me",
+  ]);
+  const savingAPR =
+    (await client.database.getDynamicGlobalProperties()).hbd_interest_rate /
+    100;
   return [
     {
       title: t("introduction.title"),
