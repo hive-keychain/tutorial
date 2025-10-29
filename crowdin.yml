@@ -18,8 +18,8 @@
 files:
   [
     {
-      "source": "src/translation/en/en.json",
-      "translation": "src/translation/%two_letters_code%/%two_letters_code%.json",
+      "source": "src/translation/en.json",
+      "translation": "src/translation/%two_letters_code%.json",
       "skip_untranslated_files": true,
     },
   ]
