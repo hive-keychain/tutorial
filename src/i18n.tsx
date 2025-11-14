@@ -4,8 +4,10 @@ import XHR from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 
 //Import all translation files
-import translationEnglish from "./translation/en/en.json";
-import translationSpanish from "./translation/es/es.json";
+import translationGerman from "./translation/de.json";
+import translationEnglish from "./translation/en.json";
+import translationSpanish from "./translation/es.json";
+import translationIndonesian from "./translation/id.json";
 
 //---Using translation
 const resources = {
@@ -14,6 +16,12 @@ const resources = {
   },
   es: {
     translation: translationSpanish,
+  },
+  de: {
+    translation: translationGerman,
+  },
+  id: {
+    translation: translationIndonesian,
   },
 };
 
