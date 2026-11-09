@@ -2,61 +2,21 @@
   "name": "tutorial",
   "version": "0.1.0",
   "private": true,
+  "description": "Onboarding tutorial for Hive Keychain users",
   "homepage": ".",
-  "dependencies": {
-    "@hiveio/dhive": "^1.3.2",
-    "@types/chrome": "^0.0.266",
-    "@types/node": "^16.18.33",
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4",
-    "i18next": "^23.11.2",
-    "i18next-browser-languagedetector": "^7.2.1",
-    "i18next-http-backend": "^2.5.1",
-    "keychain-sdk": "github:hive-keychain/keychain-sdk",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^14.1.0",
-    "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
-    "sass": "^1.63.2",
-    "typescript": "^4.9.5"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hive-keychain/tutorial.git"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start": "serve -s build",
-    "predeploy": "npm run build",
-    "deploy": "echo tutorial.hive-keychain.com > ./build/CNAME && gh-pages -d build",
+    "start": "serve -s dist",
+    "deploy": "echo tutorial.hive-keychain.com > ./dist/CNAME && gh-pages -d dist",
     "crowdin:pull": "crowdin download",
     "crowdin:push": "crowdin upload sources"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "@types/file-saver": "^2.0.5",
-    "dotenv": "^16.0.3",
-    "file-loader": "^6.2.0",
     "gh-pages": "^5.0.0",
-    "pm2": "^5.3.0",
     "serve": "^14.2.0"
   }
 }
